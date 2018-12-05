@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#630f0f">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fafafa"
+            android:text="_icy_tony_"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Oakland, CA"
+            android:textSize="18sp"
+            android:paddingLeft="30dp"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="445dp"
+            android:src="@drawable/droidgram_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Getting ready for the christmas season!!! "
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:paddingBottom="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Likes: 0"
+                android:textColor="#ffffff"
+                android:id="@+id/likes_text_view"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:paddingEnd="20dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#080808"
+                android:text="👍"
+                android:onClick="increaseLikes"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#080808"
+                android:text="👎"
+                android:onClick="decreaseLikes"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
