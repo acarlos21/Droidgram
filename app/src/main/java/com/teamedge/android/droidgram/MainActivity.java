@@ -27,10 +27,9 @@ public class MainActivity extends Activity {
 
     }
     public void decreaseLikes(View view) {
-        numberOfLikes--;
-        displayLikes(numberOfLikes);
-        if(numberOfLikes == 0){
-            numberOfLikes = 1;
+        if(numberOfLikes > 0){
+            numberOfLikes--;
         }
+        displayLikes(numberOfLikes);
      }
 }
